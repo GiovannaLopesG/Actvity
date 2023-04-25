@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="first-side">
+        <form action="">
+        <div class="box">
+            <h1 id="first-h1">Welcome Back!</h1>
+            <p id="p1">To keep connected with us</p>
+            <p id="p2">please login with your personal info</p>
+            <a href="login.html" target="_blank"><input type="button" value="SIGN IN" id="second-btn"></a>
+        </div><!--box-->
+    </main><!--firt-side-->
+    <img src="images/lua.png" id="lua" alt="lua" onclick="changeMode">
+    <img src="images/sol.png" id="sol" alt="sol" onclick="changeMode">
+    <main class="second-side">
+        <h1 id="second-h1">Create Account</h1>
+        <div class="icons">
+            <div class="icon1"><a href="https://github.com/"><img src="images/github.png" alt="Github"></a></div>
+            <div class="icon2"><a href="https://www.google.com.br/"><img src="images/google.png" alt="Google"></a></div>
+            <div class="icon3"><a href="https://www.instagram.com/?hl=pt-br"><img src="images/instagram.png"alt="Instagram"></a></div>
+            <div class="icon4"><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </div>
+        </div><!--icons-->
+        <p id="p3">Or use your email for registration:</p>
+        <div class="inputs">
+            <input type="text" name="" id="inptext" placeholder="Name" required>
+            <input type="email" name="" id="inpemail" placeholder="Email" required>
+            <input type="password" name="" id="inppass" placeholder="Password" required>
+            <input type="number" name="" id="inpnumber" placeholder="Cpf" required>
+            <input type="date" name="" min="1920-01-01"  max="2023-01-01" required>
+        </div>
+            <select id="sex" name="sex" required>
+                <option value="sex" disabled selected> Sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+              <select id="estado" name="estado" required>
+                <option value="state" disabled selected> State</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Let us know a little bit more about you!"cols="30" rows="5" maxlength="1000"></textarea>
+
+            </textarea>
+            <h3 id="h33">Select Your Salary Range</h3>
+            <input type="range" min="0" max="5000" value ="50" id="slide" required oninput = "rangeValue.innerText = this.value"> 
+             R$<p id="rangeValue" >0,00</p>
+            <button>SIGN UP</button>
+                </div><!--inputs-->
+            </main><!--second-side-->
+            <script src="js/index.js"></script>
+           </div><br>
+
+</body>
+
+</html>
